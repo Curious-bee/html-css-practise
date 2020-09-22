@@ -1,0 +1,88 @@
+/* General 
+============*/
+
+body {
+width: 900px;
+margin: auto;
+background-color: whitesmoke;
+font-size: 16px;
+letter-spacing: .025em;
+}
+
+/* IMAGES
+===========*/
+#img1{
+	width: 900px;
+	margin: auto;
+}
+
+.aside-image {
+	width: 272px;
+}
+
+/* Typography
+===========*/
+.handwritten-font {
+	font-family: cursive;
+	text-align: center;
+}
+
+a {
+	text-decoration: none;
+	color: dodgerblue;
+}
+a:hover {
+	color: mediumseagreen;
+}
+
+/* Flex
+===========*/
+.container {
+	display: flex;
+	justify-content: space-between;
+}
+
+
+	main {
+		width: 65%;
+	}
+
+			main th {
+				width: 20%;
+				text-align: left;
+				padding-left: .75em;
+				background-color: whitesmoke;
+			}
+
+			th, td {
+				line-height: 1.5em;
+			}
+
+			td {
+				background-color: lightgrey;	
+				padding-left: .5em;
+			}
+
+	aside {
+		width: 30%;
+	} 
+			aside h2 {
+				text-align: center;
+			}
+
+			aside th {
+				width: 25%;
+				background-color: whitesmoke;
+			}
+
+			aside td {
+				font-size: 14px;
+			}
+
+
+
+footer {
+	background-color: lightgrey;
+	text-align: center; 
+}
+
