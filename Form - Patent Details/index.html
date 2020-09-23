@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="styles.css">
+	<link href="<link href="https://fonts.googleapis.com/css2?family=Bitter:wght@600&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+	<title>New Filing Form</title>	
+</head>
+<body>
+	<header>
+		<h1>New Filing Details</h1>
+		<p>[ Nest IP Services ]</p>
+	</header>
+	<form>
+				
+		<div class="case-type">
+			<h3>Case Type and Patent Office details</h2>
+			<div>
+			<label for="ip-type">Intellectual Property Type</label><br>
+			<select name="ip-type" id="ip-type">
+				<option value="">--Choose an option--</option>
+				<option value="trademark">Trademark</option>
+				<option value="design">Design</option>
+				<optgroup label="Patent">
+					<option value="patent-provisional">Provisional Application</option>
+					<option value="patent-complete">Complete Application</option>
+					<option value="national-phase">National Phase Application</option>
+					<option value="pct">Internationl Application</option>
+					<option value="conventional">Conventional application</option>
+				</optgroup>
+			</select> <br>
+			</div>
+
+			<!-- IPO Branch -->
+			<div>
+			<label for="patent-office">Patent Office Branch</label> <br>
+			<select name="patent-office" id="patent-office">
+				<option value="chennai">Chennai</option>
+				<option value="mumbai">Mumbai</option>
+				<option value="kolkata">Kolkata</option>
+				<option value="delhi">Delhi</option>
+				<option value="ahamadabad">Ahamadabad</option>
+			</select> <br>
+			</div>
+
+			<button type="button" onclick="alert('Saved Details!')">Save</button>
+
+		</div>
+
+
+
+		<div class="application-details">
+			<h3> Application Details</h2>
+
+			 <!-- Applicaiton Number -->	
+			<label for="app-num">Application No.</label>
+			<input type="text" name="app-num" id="app-num"><br>
+
+			<!-- Filing Date -->
+			<label for="filing-date">Filing Date</label>
+			<input type="Date" name="filing-date" id="filing-date"> <br>
+
+			<div>
+			<!-- Current Status and last updated -->
+				<label for="current-status1">Current Status</label>
+				<input list="status-list" name="current-status" id="current-status">
+				<datalist id="status-list">
+					<option value="Filed">
+					<option value="Published">
+					<option value="Exaination request not filed">
+					<option value="Awaiting FER">
+					<option value="Response to FER filed">
+					<option value="Abandoned">
+					<option value="Granted">
+					<option value="Rejected">
+				</datalist> <br>
+			</div>		
+			
+			<!-- Our Reference No. -->
+			<label for="ref-num">Our Ref. Num.</label>
+			<input type="text" name="ref-num" id="ref-num"> <br>
+
+			<!-- Title -->
+			<label for="title">Title of the Invention</label>
+			<input type="text" name="title" id="title"> <br>
+
+			<!-- Applicant details -->
+			<div>
+			<label for="applicant-details">Applicant Details:</label><br>
+			<input type="text" name="applicant-name" id="applicant-details" placeholder="Name">
+			<textarea  name="applicant-address" id="applicant-details" placeholder="Address"></textarea>
+			<input type="text" name="applicant-nationality" id="applicant-details" placeholder="Nationality">
+			<input type="email" name="applicant-email" id="applicant-details" placeholder="Email Address">
+			<input type="text" name="applicant-phonenumber" id="applicant-details" placeholder="Phone Number">
+			</div>  <br>
+
+
+			<!-- inventor details -->
+			<div>
+			<label for="inventor-details">Inventor Details:</label> <br>
+			<input type="text" name="inventor-name" id="inventor-details" placeholder="Name">
+			<textarea  name="inventor-address" id="inventor-details" placeholder="Address"></textarea>
+			<input type="text" name="inventor-nationality" id="inventor-details" placeholder="Nationality">
+			<input type="email" name="inventor-email" id="inventor-details" placeholder="Email Address">
+			<input type="text" name="inventor-phonenumber" id="inventor-details" placeholder="Phone Number">
+			</div>  <br>
+
+			<!-- Priority details -->
+			<label for="priority-details">Priority Details:</label> <br>
+				<input type="text" name="prioirty-country" id="priority-details" placeholder="Priority Country">
+				<input type="date" name="priotiy-date" id="priority-details" placeholder="Priority Date">
+				<input type="text" name="prioity-number" id="priority-details" placeholder="Priority Number"> <br>
+		
+			<!-- POA status -->
+			<label for="poa-status">Form 26 - POA</label>
+			<select name="poa-status" id="poa-status">
+				<option value="">-choose-</option>
+				<option value="filed">Filed</option>
+				<option value="not-filed">Not Filed</option>
+			</select>
+			<input type="date" name="poa-filing-date" id="poa-status"> <br>
+
+			<!-- Form 5 status -->
+			<label for="form5-status">Form 5 - Declaration as to Inventorship</label>
+			<select name="form5-status" id="form5-status">
+				<option value="">-choose-</option>
+				<option value="filed">Filed</option>
+				<option value="not-filed">Not Filed</option>
+			</select>
+			<input type="date" name="form5-status" id="form5-status"> <br>
+
+			<!-- Form 3 status -->
+			<label for="form3-status">Form 3 - Statement of Undertaking</label>
+			<select name="form3-status" id="form3-status">
+				<option value="">-choose-</option>
+				<option value="filed">Filed</option>
+				<option value="not-filed">Not Filed</option>
+			</select>
+			<input type="date" name="form3-status" id="form3-status"> <br>
+			
+			<!-- Assignment deed -->
+			<label for="assignment-deed-status">Assignment Deed</label>
+			<select name="assignment-deed-status" id="assignment-deed-status">
+				<option value="">-choose-</option>
+				<option value="filed">Filed</option>
+				<option value="not-filed">Not Filed</option>
+			</select>
+			<input type="date" name="assignment-deed-status" id="assignment-deed-status"> <br>
+			
+			<!-- Early Publication (Form-9) -->
+			<label for="early-publication">Form 9 - Early Publication</label>
+			<select name="early-publication" id="early-publication">
+				<option value="">-choose-</option>
+				<option value="filed">Filed</option>
+				<option value="not-filed">Not Filed</option>
+			</select>
+			<input type="date" name="early-publication" id="early-publication"> <br>
+
+			<!-- Examination Request -->
+			<label for="examination-request">Examination Request</label>
+			<select name="examination-request" id="examination-request">
+				<option value="">-choose-</option>
+				<option value="filed">Filed</option>
+				<option value="not-filed">Not Filed</option>
+			</select>
+			<input type="date" name="examination-request" id="examination-request"> <br>
+
+			<button type="button" onclick="alert('Saved Details!')">Save</button>
+		</div>
+		
+
+
+
+		<div class="client-details">
+			<h3> Client Details</h2>
+			<!-- Client code -->
+			<label for="client-code">Client Code</label>
+			<input type="text" name="client-code" id="client-code"> <br>
+
+			<!-- Client/Agent Reference No. -->
+			<label for="agent-ref-num">Client/Agent's Ref. Num.</label>
+			<input type="text" name="agent-ref-num" id="agent-ref-num"> <br>
+
+			
+			<!-- Foreign Agent details -->
+			<div>
+			<label for="agent-details">Agent/Reference details</label> <br>
+			<select name="agent-type" id="agent-details">
+				<option value="">-choose-</option>
+				<option value="foreign-agent">Foreign Agent/Law firm</option>
+				<option value="reference">Reference</option>
+			</select>
+			<input type="text" name="agent-code" id="agent-details" placeholder="Agent Code">
+			<input type="text" name="agent-name" id="agent-details" placeholder="Name">
+			<input type="text" name="agent-country" id="agent-details" placeholder="Country">
+			<textarea  name="agent-address" id="agent-details" placeholder="Address"></textarea>
+			<input type="email" name="agent-email" id="agent-details" placeholder="Email">
+			<input type="text" name="agent-phone" id="agent-details" placeholder="Phone">
+			</div> <br>
+
+		</div>
+
+		<input type="submit" name="submit">
+
+	</form>
+
+</body>
+</html>
