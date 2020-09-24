@@ -31,13 +31,13 @@ body {
 figure {
   padding: 4px;
   margin: auto;
-  width: 900px;
+  width: 100%;
 }
 
 #img1{
 	display: block;
 	margin: auto;
-	width: 900px;
+	width: 100%;
 }
 
 .aside-image {
